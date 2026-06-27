@@ -3,10 +3,8 @@ from app.people.customer import Customer
 
 
 class CinemaHall:
-    def __init__(self,
-                 number: int | None = None,
-                 hall_number: int | None = None) -> None:
-        self.number = number if number is not None else hall_number
+    def __init__(self, number: int) -> None:
+        self.number = number
 
     def movie_session(
         self,
